@@ -1,22 +1,27 @@
 :root {
-  --dark-blue: darkblue;
+  --light-blue: lightblue;
   --orange: orange;
-  --primary: var(--dark-blue);
+  --primary: var(--light-blue);
 
-  --h1: 7.594rem;
-  --h2: 5.063rem;
+  --h1: 6.594rem;
+  --h2: 4.063rem;
 }
 .dark{
   --primary: var(--orange);
 }
 .light{
-  --primary: var(--dark-blue);
+  --primary: var(--light-blue);
 }
 body {
   background-color: var(--primary);
 }
 h1 {
   font-size: var(--h1);
+  text-align: center;
+}
+h2 {
+  font-size: var(--h2);
+  text-align: center;
 }
 .section-title {
   font-size: var(--h1);
