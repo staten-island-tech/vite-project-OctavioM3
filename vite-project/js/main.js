@@ -1,4 +1,4 @@
 import "../css/style.css";
-import { Menu, Name } from "./Menu";
+import { Menu } from "./Menu";
 
-console.log(Menu, Name);
+console.log(Menu);
