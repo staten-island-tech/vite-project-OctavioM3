@@ -47,7 +47,7 @@ const Menu = [
     price: 15.00,
     inStock: true,
 },
-]
+];
 
 
 export { Menu };
