@@ -26,3 +26,20 @@ h2 {
 .section-title {
   font-size: var(--h1);
 }
+.Cardimg {
+  width: 20%;
+  height: 40%;
+}
+#CardBox {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.MealCard {
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  align-items: center;
+  background-color: azure;
+}

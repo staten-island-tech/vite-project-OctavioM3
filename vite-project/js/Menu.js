@@ -1,51 +1,59 @@
 const Menu = [
 {
-    name: "Pizza Pie",
+    name: "Classic Cheese Pizza",
     vegetarian: false,
     price: 13.00,
     inStock: true,
+    img: "../pizza.jpg"
 },
 {
     name: "Beef Burger",
     vegetarian: false,
     price: 10.00,
     inStock: true,
+    img: "../beefburger.jpg"
 },
 {
     name: "French Fries",
     vegetarian: true,
     price: 6.00,
     inStock: true,
+    img: "../frenchfries.jpg"
 },
 {
-    name: "Ceasar Salad",
+    name: "Avocado Caesar Salad",
     vegetarian: true,
     price: 10.00,
     inStock: false,
+    img: "../avocadocaesarsalad.jpg"
 },
 {
     name: "Spaghetti Meatballs",
     vegetarian: false,
     price: 11.00,
     inStock: false,
+    img: "../spaghettimeatballs.jpg"
 },
 {
     name: "Potato Salad",
     vegetarian: true,
     price: 12.00,
     inStock: true,
+    img: "../potatosalad.webp"
 },
 {
     name: "Grilled Salmon",
     vegetarian: false,
     price: 10.00,
     inStock: false,
+    img: "../grilledsalmon.jpg"
 },
 {
     name: "Vegetarian Pasta",
     vegetarian: true,
     price: 15.00,
     inStock: true,
+    img: "../vegetarianpasta.jpg"
 },
 ];
 
