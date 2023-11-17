@@ -1,13 +1,12 @@
 import "../css/style.css";
 import { Menu } from "./Menu";
 import { DOMSelectors } from "./Dom";
-import { insertfullMenu } from "./Insert";
-import { clearAll } from "./Insert";
+import { insertfullMenu, clearAll } from "./Insert";
 
 console.log(Menu);
 
-DOMSelectors.SeeFullMenuBtn.addEventListener("click", function (event) {
+DOMSelectors.MenuButton.addEventListener("click", function (event) {
     event.preventDefault();
-    insertfullMenu();
     clearAll();
+    insertfullMenu();
 });

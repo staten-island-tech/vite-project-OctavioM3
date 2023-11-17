@@ -11,12 +11,9 @@ function insertfullMenu() {
 }
 
 function clearAll() {
-  let cards = document.querySelectorAll ("#MealCard");
-    MenuButton.addEventListener("click", function (secondevent) {
-      secondevent.target.parentElement.cards();
-    });
-});
+  const MealCard = document.querySelectorAll(".MealCard");
+  MealCard.forEach((item) => item.remove());
 }
 
-export { insertfullMenu };
-export { clearAll };
+export { insertfullMenu, clearAll };
+
