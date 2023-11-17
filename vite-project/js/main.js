@@ -1,7 +1,7 @@
 import "../css/style.css";
 import { Menu } from "./Menu";
 import { DOMSelectors } from "./Dom";
-import { insertfullMenu, clearAll } from "./Insert";
+import { insertfullMenu, clearAll, VegetarianMenu } from "./Insert";
 
 console.log(Menu);
 
@@ -10,3 +10,10 @@ DOMSelectors.MenuButton.addEventListener("click", function (event) {
     clearAll();
     insertfullMenu();
 });
+
+DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    clearAll();
+    VegetarianMenu();
+});
+

@@ -15,5 +15,15 @@ function clearAll() {
   MealCard.forEach((item) => item.remove());
 }
 
-export { insertfullMenu, clearAll };
+function VegetarianMenu() {
+  const Vegetarian = Menu.filter((Meal) => Meal.vegetarian == true);
+  Vegetarian.forEach((Meal) => 
+  DOMSelectors.CardBox.insertAdjacentHTML(
+    "beforeend",
+    `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"></div>`
+  )
+  );
+}
+
+export { insertfullMenu, clearAll, VegetarianMenu };
 

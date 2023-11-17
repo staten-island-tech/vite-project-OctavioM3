@@ -37,8 +37,8 @@ h2 {
   flex-wrap: wrap;
 }
 .MealCard {
-  width: 25%;
-  height: 25%;
+  width: 70vh;
+  height: 70vh;
   text-align: center;
   align-items: center;
   background-color: azure;
