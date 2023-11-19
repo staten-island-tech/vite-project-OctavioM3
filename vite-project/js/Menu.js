@@ -55,6 +55,41 @@ const Menu = [
     inStock: true,
     img: "../vegetarianpasta.jpg"
 },
+{
+    name: "Vegetarian Pizza",
+    vegetarian: true,
+    price: 12.00,
+    inStock: false,
+    img: "../vegetarianpizza.jpg"
+},
+{
+    name: "Veggie Burger",
+    vegetarian: true,
+    price: 9.00,
+    inStock: true,
+    img: "../veggieburger.jpg"
+},
+{
+    name: "Spinach and Feta Salad",
+    vegetarian: true,
+    price: 8.00,
+    inStock: false,
+    img: "../spinachandfetasalad.jpg"
+},
+{
+    name: "Caprese Panini",
+    vegetarian: true,
+    price: 10.00,
+    inStock: true,
+    img: "../capresepanini.jpg"
+},
+{
+    name: "Tomato Basil Soup",
+    vegetarian: true,
+    price: 7.00,
+    inStock: false,
+    img: "../tomatobasilsoup.jpg"
+}
 ];
 
 

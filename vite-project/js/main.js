@@ -6,14 +6,17 @@ import { insertfullMenu, clearAll, VegetarianMenu } from "./Insert";
 console.log(Menu);
 
 DOMSelectors.MenuButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    clearAll();
-    insertfullMenu();
+  event.preventDefault();
+  clearAll();
+  insertfullMenu();
 });
 
 DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    clearAll();
-    VegetarianMenu();
+  event.preventDefault();
+  clearAll();
+  VegetarianMenu();
 });
 
+DOMSelectors.ThemeSelector.addEventListener("change", function () {
+  console.log("works");
+});

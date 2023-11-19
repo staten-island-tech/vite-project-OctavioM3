@@ -37,9 +37,13 @@ h2 {
   flex-wrap: wrap;
 }
 .MealCard {
-  width: 70vh;
-  height: 70vh;
+  width: 30%;
   text-align: center;
   align-items: center;
   background-color: azure;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+.ThemeSelector {
+  text-align: right;
 }
