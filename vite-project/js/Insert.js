@@ -5,7 +5,7 @@ function insertfullMenu() {
   Menu.forEach((Meal) =>
     DOMSelectors.CardBox.insertAdjacentHTML(
       "beforeend",
-      `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"></div>`
+      `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"><p class="Desc"> ${Meal.price} </p></div>`
     )
   );
 }
@@ -20,7 +20,7 @@ function VegetarianMenu() {
   Vegetarian.forEach((Meal) => 
   DOMSelectors.CardBox.insertAdjacentHTML(
     "beforeend",
-    `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"></div>`
+    `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"><p class="Desc"> ${Meal.price} </p></div>`
   )
   );
 }

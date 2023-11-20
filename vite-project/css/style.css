@@ -3,8 +3,11 @@
   --dark-grey: darkgrey;
   --white: white;
   --black: black;
+  --antiquewhite: antiquewhite;
+  --navy: navy;
   --primary: var(--white);
   --secondary: var(--light-blue);
+  --third: var(--antiquewhite);
 
   --h1: 6.594rem;
   --h2: 4.063rem;
@@ -12,11 +15,14 @@
 .Dark{
   --primary: var(--black);
   --secondary: var(--dark-grey);
-  
+  --third: var(--navy);
+  color: var(--antiquewhite);
 }
 .Light{
   --primary: var(--white);
   --secondary: var(--light-blue);
+  --third: var(--antiquewhite);
+  color: var(--black);
 }
 .heading {
   background-color: var(--primary);
@@ -49,9 +55,9 @@ h2 {
   width: 30%;
   text-align: center;
   align-items: center;
-  background-color: azure;
   margin-bottom: 2%;
   margin-left: 1%;
+  background-color: var(--third);
 }
 .ThemeSelector {
   text-align: right;

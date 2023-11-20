@@ -2,6 +2,7 @@ import "../css/style.css";
 import { Menu } from "./Menu";
 import { DOMSelectors } from "./Dom";
 import { insertfullMenu, clearAll, VegetarianMenu } from "./Insert";
+import { Themes } from "./Themes";
 
 console.log(Menu);
 
@@ -17,12 +18,7 @@ DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
   VegetarianMenu();
 });
 
-DOMSelectors.ThemeSelector.addEventListener("change", function () {
-  if (DOMSelectors.ThemeSelector.value === "light") {
-    document.body.classList.add("Light");
-    document.body.classList.remove("Dark");
-  } else {
-    document.body.classList.add("Dark");
-    document.body.classList.remove("Light");
-  }
+DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
+  event.preventDefault
+  Themes();
 });
