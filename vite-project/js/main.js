@@ -24,10 +24,5 @@ DOMSelectors.ThemeSelector.addEventListener("change", function () {
   } else {
     document.body.classList.add("Dark");
     document.body.classList.remove("Light");
-  } 
-  if (DOMSelectors.ThemeSelector.value === "none") {
-    document.body.classList.remove("Dark");
-    document.body.classList.remove("Light");
   }
-  }
-);
+});
