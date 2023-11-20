@@ -18,5 +18,16 @@ DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
 });
 
 DOMSelectors.ThemeSelector.addEventListener("change", function () {
-  console.log("works");
-});
+  if (DOMSelectors.ThemeSelector.value === "light") {
+    document.body.classList.add("Light");
+    document.body.classList.remove("Dark");
+  } else {
+    document.body.classList.add("Dark");
+    document.body.classList.remove("Light");
+  } 
+  if (DOMSelectors.ThemeSelector.value === "none") {
+    document.body.classList.remove("Dark");
+    document.body.classList.remove("Light");
+  }
+  }
+);

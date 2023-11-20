@@ -1,19 +1,28 @@
 :root {
   --light-blue: lightblue;
-  --orange: orange;
-  --primary: var(--light-blue);
+  --dark-grey: darkgrey;
+  --white: white;
+  --black: black;
+  --primary: var(--white);
+  --secondary: var(--light-blue);
 
   --h1: 6.594rem;
   --h2: 4.063rem;
 }
-.dark{
-  --primary: var(--orange);
+.Dark{
+  --primary: var(--black);
+  --secondary: var(--dark-grey);
+  
 }
-.light{
-  --primary: var(--light-blue);
+.Light{
+  --primary: var(--white);
+  --secondary: var(--light-blue);
+}
+.heading {
+  background-color: var(--primary);
 }
 body {
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 h1 {
   font-size: var(--h1);
