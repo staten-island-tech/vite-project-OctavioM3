@@ -4,6 +4,8 @@ const DOMSelectors = {
     MenuForm: document.getElementById("MenuForm"),
     VegetarianButton: document.querySelector("#vegiebtn"),
     ThemeSelector: document.getElementById("theme-select"),
+    CheapButton: document.querySelector("#cheapbtn"),
+    InStockButton: document.querySelector("#instockbtn"),
 };
 
 export { DOMSelectors };

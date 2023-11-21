@@ -11,6 +11,7 @@
 
   --h1: 6.594rem;
   --h2: 4.063rem;
+  --h3: 2rem;
 }
 .Dark{
   --primary: var(--black);
@@ -58,7 +59,13 @@ h2 {
   margin-bottom: 2%;
   margin-left: 1%;
   background-color: var(--third);
+  font-size: var(--h3);
+  padding-bottom: 5%;
 }
 .ThemeSelector {
   text-align: right;
+}
+#MenuForm {
+  text-align: center;
+  height: 140%;
 }
