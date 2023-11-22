@@ -8,6 +8,7 @@
   --primary: var(--white);
   --secondary: var(--light-blue);
   --third: var(--antiquewhite);
+  --fourth: var(--black);
 
   --h1: 6.594rem;
   --h2: 4.063rem;
@@ -17,16 +18,17 @@
   --primary: var(--black);
   --secondary: var(--dark-grey);
   --third: var(--navy);
-  color: var(--antiquewhite);
+  --fourth: var(--antiquewhite)
 }
 .Light{
   --primary: var(--white);
   --secondary: var(--light-blue);
   --third: var(--antiquewhite);
-  color: var(--black);
+  --fourth: var(--black)
 }
 .heading {
   background-color: var(--primary);
+  color: var(--fourth);
 }
 body {
   background-color: var(--secondary);
@@ -38,9 +40,6 @@ h1 {
 h2 {
   font-size: var(--h2);
   text-align: center;
-}
-.section-title {
-  font-size: var(--h1);
 }
 .Cardimg {
   width: 20%;
@@ -61,11 +60,28 @@ h2 {
   background-color: var(--third);
   font-size: var(--h3);
   padding-bottom: 5%;
+  border-radius: 1cm;
+  color: var(--fourth);
 }
 .ThemeSelector {
   text-align: right;
 }
-#MenuForm {
+.btns {
   text-align: center;
-  height: 140%;
+}
+#menubtn {
+  background-color: var(--third);
+  color: var(--fourth);
+}
+#vegiebtn {
+  background-color: var(--third);
+  color: var(--fourth);
+}
+#cheapbtn {
+  background-color: var(--third);
+  color: var(--fourth);
+}
+#instockbtn {
+  background-color: var(--third);
+  color: var(--fourth);
 }
