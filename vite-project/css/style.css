@@ -5,6 +5,10 @@
   --black: black;
   --antiquewhite: antiquewhite;
   --navy: navy;
+  --dark-green: #011B10;
+  --zuccini: #133A1B;
+  --green-mist: #B7BF96;
+  --tusk: #E4DEAE;
   --primary: var(--white);
   --secondary: var(--light-blue);
   --third: var(--antiquewhite);
@@ -13,6 +17,7 @@
   --h1: 6.594rem;
   --h2: 4.063rem;
   --h3: 2rem;
+  --h4: 1.555rem;
 }
 .Dark{
   --primary: var(--black);
@@ -26,9 +31,16 @@
   --third: var(--antiquewhite);
   --fourth: var(--black)
 }
+.Green {
+  --primary: var(--dark-green);
+  --secondary: var(--green-mist);
+  --third: var(--zuccini);
+  --fourth: var(--tusk);
+}
 .heading {
   background-color: var(--primary);
   color: var(--fourth);
+  font-family: 'Caveat', cursive;
 }
 body {
   background-color: var(--secondary);
@@ -42,7 +54,7 @@ h2 {
   text-align: center;
 }
 .Cardimg {
-  width: 20%;
+  width: 40%;
   height: 40%;
 }
 #CardBox {
@@ -68,20 +80,25 @@ h2 {
 }
 .btns {
   text-align: center;
+  margin-bottom: 5%;
 }
 #menubtn {
   background-color: var(--third);
   color: var(--fourth);
+  font-size: var(--h4);
 }
 #vegiebtn {
   background-color: var(--third);
   color: var(--fourth);
+  font-size: var(--h4);
 }
 #cheapbtn {
   background-color: var(--third);
   color: var(--fourth);
+  font-size: var(--h4);
 }
 #instockbtn {
   background-color: var(--third);
   color: var(--fourth);
+  font-size: var(--h4);
 }
