@@ -41,17 +41,18 @@
   background-color: var(--primary);
   color: var(--fourth);
   font-family: 'Caveat', cursive;
+  width: 100%;
+  border-radius: 5%;
+  text-align: center;
 }
 body {
   background-color: var(--secondary);
 }
 h1 {
   font-size: var(--h1);
-  text-align: center;
 }
 h2 {
   font-size: var(--h2);
-  text-align: center;
 }
 .Cardimg {
   width: 40%;
@@ -86,19 +87,23 @@ h2 {
   background-color: var(--third);
   color: var(--fourth);
   font-size: var(--h4);
+  border-radius: 10%;
 }
 #vegiebtn {
   background-color: var(--third);
   color: var(--fourth);
   font-size: var(--h4);
+  border-radius: 10%;
 }
 #cheapbtn {
   background-color: var(--third);
   color: var(--fourth);
   font-size: var(--h4);
+  border-radius: 10%;
 }
 #instockbtn {
   background-color: var(--third);
   color: var(--fourth);
   font-size: var(--h4);
+  border-radius: 10%;
 }

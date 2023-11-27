@@ -1,13 +1,17 @@
 import { Menu } from "./Menu";
 import { DOMSelectors } from "./Dom";
 
-function insertfullMenu() {
-  Menu.forEach((Meal) =>
-    DOMSelectors.CardBox.insertAdjacentHTML(
-      "beforeend",
-      `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"><p class="Desc"> $ ${Meal.price} </p></div>`
+function MenuCard(arr) {
+  DOMSelectors.CardBox.insertAdjacentHTML(
+    "beforeend",
+    `<div class="MealCard"><h3> ${arr.name} </h3><img src="${arr.img}" alt="${arr.name}" class="Cardimg"><p class="Desc"> $ ${arr.price} </p></div>`
+  )
+}
+
+function insertfullMenu(arr) {
+  arr.forEach((arr) =>
+  MenuCard(arr)
     )
-  );
 }
 
 function clearAll() {
@@ -17,12 +21,9 @@ function clearAll() {
 
 function VegetarianMenu() {
   const Vegetarian = Menu.filter((Meal) => Meal.vegetarian == true);
-  Vegetarian.forEach((Meal) => 
-  DOMSelectors.CardBox.insertAdjacentHTML(
-    "beforeend",
-    `<div class="MealCard"><h3> ${Meal.name} </h3><img src="${Meal.img}" alt="${Meal.name}" class="Cardimg"><p class="Desc"> $ ${Meal.price} </p></div>`
+  Vegetarian.forEach((arr) =>
+  MenuCard(arr)
   )
-  );
 }
 
 function CheapMenu() {
