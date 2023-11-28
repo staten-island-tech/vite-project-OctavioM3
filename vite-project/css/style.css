@@ -42,6 +42,8 @@
   color: var(--fourth);
   font-family: 'Caveat', cursive;
   width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   border-radius: 5%;
   text-align: center;
 }
@@ -79,29 +81,11 @@ h2 {
 .ThemeSelector {
   text-align: right;
 }
-.btns {
+.buttons {
   text-align: center;
   margin-bottom: 5%;
 }
-#menubtn {
-  background-color: var(--third);
-  color: var(--fourth);
-  font-size: var(--h4);
-  border-radius: 10%;
-}
-#vegiebtn {
-  background-color: var(--third);
-  color: var(--fourth);
-  font-size: var(--h4);
-  border-radius: 10%;
-}
-#cheapbtn {
-  background-color: var(--third);
-  color: var(--fourth);
-  font-size: var(--h4);
-  border-radius: 10%;
-}
-#instockbtn {
+.btns {
   background-color: var(--third);
   color: var(--fourth);
   font-size: var(--h4);

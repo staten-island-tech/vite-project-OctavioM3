@@ -25,9 +25,9 @@ DOMSelectors.InStockButton.addEventListener("click", function (event) {
   event.preventDefault();
   clearAll();
   InStockMenu();
-})
+});
 
 DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
-  event.preventDefault
+  event.preventDefault();
   Themes();
 });

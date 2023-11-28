@@ -11,8 +11,7 @@ if (DOMSelectors.ThemeSelector.value === "light") {
     document.body.classList.add("Green");
     document.body.classList.remove("Dark", "Light");
   } else {
-    document.body.classList.remove("Dark");
-    document.body.classList.remove("Light", "Green");
+    document.body.classList.remove("Dark", "Light", "Green");
   }
 }
 
