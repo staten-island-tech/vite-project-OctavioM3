@@ -28,14 +28,11 @@ DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
 });
 
 let buttons = document.querySelectorAll(".btns")
-buttons.forEach((btn) => btn.addEventListener("click", function(SeeMenu){
-  clearAll(SeeMenu)
-  let filter = btn.textContent
-  if (btn == buttons[0]) {
+buttons.forEach((btn) => btn.addEventListener("click", function(){
+  clearAll()
+  if (btn.textContent = "Click to see Full Menu") {
     insertfullMenu()
-  } else if (btn == buttons[4]) {
+  } else if (btn.textContent = "Click to see In Stock Menu") {
     InStockMenu()
   }
 }));
-
-Menu.filter((SeeMenu) => SeeMenu.includes(filter)).forEach((SeeMenu)=>insertfullMenu(SeeMenu));
