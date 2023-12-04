@@ -2,13 +2,12 @@ import "../css/style.css";
 import { DOMSelectors } from "./Dom";
 import { insertfullMenu, clearAll, VegetarianMenu, CheapMenu, InStockMenu } from "./Insert";
 import { Themes } from "./Themes";
-import { Menu } from "./Menu";
-/*
-DOMSelectors.MenuButton.addEventListener("click", function (event)) {
+
+DOMSelectors.MenuButton.addEventListener("click", function (event) {
   event.preventDefault();
   clearAll()
   insertfullMenu();
-}
+});
 
 DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
   event.preventDefault();
@@ -27,12 +26,13 @@ DOMSelectors.InStockButton.addEventListener("click", function (event) {
   clearAll();
   InStockMenu();
 });
-*/
+
 DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
   event.preventDefault();
   Themes();
 });
 
+/*
 let buttons = document.querySelectorAll(".btns")
 buttons.forEach((btn) => btn.addEventListener("click", function(){
   clearAll()
@@ -46,3 +46,4 @@ buttons.forEach((btn) => btn.addEventListener("click", function(){
     CheapMenu()
   }
 }));
+*/
