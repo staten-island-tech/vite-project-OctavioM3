@@ -3,6 +3,12 @@ import { DOMSelectors } from "./Dom";
 import { insertfullMenu, clearAll, VegetarianMenu, CheapMenu, InStockMenu } from "./Insert";
 import { Themes } from "./Themes";
 import { Menu } from "./Menu";
+/*
+DOMSelectors.MenuButton.addEventListener("click", function (event)) {
+  event.preventDefault();
+  clearAll()
+  insertfullMenu();
+}
 
 DOMSelectors.VegetarianButton.addEventListener("click", function (event) {
   event.preventDefault();
@@ -21,7 +27,7 @@ DOMSelectors.InStockButton.addEventListener("click", function (event) {
   clearAll();
   InStockMenu();
 });
-
+*/
 DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
   event.preventDefault();
   Themes();
@@ -30,9 +36,13 @@ DOMSelectors.ThemeSelector.addEventListener("change", function (event) {
 let buttons = document.querySelectorAll(".btns")
 buttons.forEach((btn) => btn.addEventListener("click", function(){
   clearAll()
-  if (btn.textContent = "Click to see Full Menu") {
+  if (buttons="#menubtn") {
     insertfullMenu()
-  } else if (btn.textContent = "Click to see In Stock Menu") {
+  } else if (buttons="#instockbtn") {
     InStockMenu()
+  } else if (buttons="#vegiebtn") {
+    VegetarianMenu()
+  } else if (buttons="#cheapbtn") {
+    CheapMenu()
   }
 }));
